@@ -34,7 +34,7 @@ export async function getWord(word: string) {
 	return jsn;
 }
 
-export function pronouce(words: word[]) {
+export function get_audio(words: word[]) {
 	let text: string = '';
 	let audio: string = '';
 
