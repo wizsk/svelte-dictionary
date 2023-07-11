@@ -13,23 +13,23 @@ export async function getWord(word: string) {
 
 	const jsn = (await res.json()) as word[];
 
-	if (jsn[0].phonetics[0] !== undefined) {
-		let audio: number = -1;
-		for (let i = 0; i <= jsn[0].phonetics.length; i++) {
-			console.log(jsn[0].phonetics[i].audio);
-			if (jsn[0].phonetics[i].audio !== '') {
-				audio = i as number;
-				break;
-			}
-		}
-		if (audio !== -1) console.log(jsn[0].phonetics[audio]);
-	} else if (jsn[0].phonetic !== undefined) {
-		console.log(jsn[0].phonetic);
-	} else {
-		console.log('nai');
-	}
+	// if (jsn[0].phonetics[0] !== undefined) {
+	// 	let audio: number = -1;
+	// 	for (let i = 0; i <= jsn[0].phonetics.length; i++) {
+	// 		console.log(jsn[0].phonetics[i].audio);
+	// 		if (jsn[0].phonetics[i].audio !== '') {
+	// 			audio = i as number;
+	// 			break;
+	// 		}
+	// 	}
+	// 	if (audio !== -1) console.log(jsn[0].phonetics[audio]);
+	// } else if (jsn[0].phonetic !== undefined) {
+	// 	console.log(jsn[0].phonetic);
+	// } else {
+	// 	console.log('nai');
+	// }
 
-	console.log('mean', jsn[0].meanings);
+	// console.log('mean', jsn[0].meanings);
 
 	return jsn;
 }

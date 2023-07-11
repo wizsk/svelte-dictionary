@@ -11,7 +11,6 @@
 	const font = writable('font');
 
 	onMount(() => {
-		// Retrieve the theme state from local storage
 		const storedTheme = localStorage.getItem('theme');
 		if (
 			storedTheme === 'dark' ||
@@ -25,17 +24,15 @@
 		if (storedFont) {
 			document.body.classList.add(storedFont);
 			pre_font = storedFont;
+		} else {
+			pre_font = 'font-lora';
+			document.body.classList.add(pre_font);
+			localStorage.setItem('font', pre_font);
 		}
 	});
-
-	// const body = document.body;
-
-	// onMount(() => {
-	// 	document.body.classList.add(pre_font);
-	// });
 </script>
 
-<nav class="lg:w-4/6 mt-6 w-4/5 flex row justify-between items-center">
+<nav class="lg:w-4/6 w-11/12 mt-6 flex row justify-between items-center">
 	<span>
 		<svg class="w-8 dark:fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
 			><title>book-open-page-variant</title><path
