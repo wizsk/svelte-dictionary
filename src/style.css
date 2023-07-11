@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.font-popins {
+	font-family: 'Poppins', sans-serif;
+}
+
+.font-lora {
+	font-family: 'Lora', serif;
+}
+/* * { */
+/*     position: relative; */
+/*     box-sizing: border-box; */
+/* } */
+/**/
+/**/
+/* html, body { */
+/*     margin: 0; */
+/* } */
+/**/
+/**/
+/* a { */
+/*     color: inherit; */
+/*     text-decoration: none; */
+/* } */
