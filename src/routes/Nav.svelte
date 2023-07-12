@@ -27,7 +27,7 @@
 			}}
 		>
 			<select
-				class="dark:bg-zinc-950 dark:text-slate-50 px-4 text-inherit outline-none rounded focus:outline-none"
+				class="bg-transparent dark:bg-zinc-950 dark:text-slate-50 px-4 text-inherit outline-none rounded focus:outline-none"
 				bind:value={selected_font}
 			>
 				<option value="font-lora">Lora</option>
