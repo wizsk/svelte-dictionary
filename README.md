@@ -8,7 +8,7 @@ Made useing slvete, tailwindcss and [dictionaryapi.dev](https://dictionaryapi.de
 
 ## Developing
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Once you've cloned the project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
 
 ```bash
 npm run dev
